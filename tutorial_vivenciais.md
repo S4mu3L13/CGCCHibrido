@@ -1,1 +1,49 @@
+# Configuração do Ambiente para Computação Gráfica com OpenGL sem instalações
+Para usar nas máquinas dos laboratórios da Unisinos.
 
+## Passo 1 - Compilador C/C++
+
+Verificar se existe este diretório no computador da sala:
+- C:\msys64
+  - C:\msys64\ucrt64\bin
+
+Se NÃO houver, precisa instalar o msys2:
+
+Link: https://github.com/msys2/msys2-installer/releases/download/2025-12-13/msys2-x86_64-20251213.exe 
+
+E então abrir o msys2 e digitar no terminal:
+```sh
+pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
+```
+
+- Primeira opção só dar ENTER
+- Depois responder "yes" para tudo.
+
+## Passo 2 - Baixar o CMAKE Portable no link abaixo:
+
+Link: https://github.com/Kitware/CMake/releases/download/v4.0.2/cmake-4.0.2-windows-x86_64.zip
+
+Descompactar (Sugere-se colocar em Documentos)
+
+Ex:  C:\Users\NOME_DO_USUARIO\Documents\
+
+## Passo 3 - Baixar Git portable no link abaixo:
+
+Link: https://github.com/git-for-windows/git/releases/download/v2.49.0.windows.1/PortableGit-2.49.0-64-bit.7z.exe
+
+Descompactar (clicar 2x)
+
+## Passo 4 - Abrir o VSCode e verificar se as seguintes extensões estão instaladas:
+
+- C/C++
+- C/C++ Extension Pack
+- CMake Tools
+
+## Passo 5 - Configurar o PATH do Windows
+
+Abra o prompt de comando do Windows (cmd.exe) e execute o seguinte comando:
+```sh
+set PATH=%PATH%;C:\msys64\ucrt64\bin;C:\Users\NOME_DO_USUARIO\Documents\cmake-4.0.2-windows-x86_64\cmake-4.0.2-windows-x86_64\bin;C:\Users\NOME_DO_USUARIO\Documents\PortableGit\bin
+```
+
+⚠️⚠️Obs: modifique o caminho para o SEU USUÁRIO!!!⚠️⚠️
