@@ -63,3 +63,10 @@ Para garantir que deu tudo certo, aperte F1 e execute o comando **CMake: Delete 
 ## Passo 6 - Abrir o projeto no VSCode e configurar
 
 Seguir a partir do Passo 2 do tutorial: https://github.com/guilhermechagaskurtz/CGCCHibrido/blob/main/GettingStarted.md
+
+## Passo 7 - Adicionar DLLs no projeto (ANTES DE COMPILAR E EXECUTAR)
+
+Vá até a pasta **bin** de onde você descompactou o **msys2** (ou onde ele está instalado, por ex, C:\msys64\ucrt64\bin) e então copie as seguintes dlls para a pasta **build** do seu projeto:
+- libstdc++-6.dll
+- libgcc_s_seh-1.dll
+- libwinpthread-1.dll
