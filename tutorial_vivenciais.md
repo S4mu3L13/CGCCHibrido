@@ -38,6 +38,7 @@ Descompactar (clicar 2x)
 Abra o projeto no Visual Studio Code e então crie (caso não exista) a pasta .vscode dentro dele.
 
 Depois, crie o arquivo settings.json, e dentro dele adicione:
+```
 {
     "cmake.cmakePath": "C:/Users/NOME_DO_USUARIO/Documents/cmake-4.0.2-windows-x86_64/bin/cmake.exe",
     "cmake.environment": {
@@ -47,6 +48,7 @@ Depois, crie o arquivo settings.json, e dentro dele adicione:
         "PATH": "C:\\msys64\\ucrt64\\bin;C:\\Users\\NOME_DO_USUARIO\\Documents\\cmake-4.0.2-windows-x86_64\\bin;C:\\Users\\NOME_DO_USUARIO\\Documents\\PortableGit\\bin;${env:PATH}"
     }
 }
+```
 
 Para garantir que deu tudo certo, aperte F1 e execute o comando **CMake: Delete Cache and Reconfigure**
 
