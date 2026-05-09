@@ -47,3 +47,7 @@ set PATH=%PATH%;C:\msys64\ucrt64\bin;C:\Users\NOME_DO_USUARIO\Documents\cmake-4.
 ```
 
 ⚠️⚠️Obs: modifique o caminho para o SEU USUÁRIO!!!⚠️⚠️
+
+## Passo 6 - Abrir o projeto no VSCode e configurar
+
+Seguir a partir do Passo 2 do tutorial: https://github.com/guilhermechagaskurtz/CGCCHibrido/blob/main/GettingStarted.md
