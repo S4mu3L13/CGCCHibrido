@@ -41,12 +41,14 @@ Depois, crie o arquivo settings.json, e dentro dele adicione:
 {
     "cmake.cmakePath": "C:/Users/NOME_DO_USUARIO/Documents/cmake-4.0.2-windows-x86_64/bin/cmake.exe",
     "cmake.environment": {
-        "PATH": "C:\\msys64\\ucrt64\\bin;C:\\Users\\NOME_DO_USUARIO\\Documents\\cmake-4.0.2-windows-x86_64\\bin;C:\\Users\\guilhermekurtz389\\Documents\\PortableGit\\bin;${env:PATH}"
+        "PATH": "C:\\msys64\\ucrt64\\bin;C:\\Users\\NOME_DO_USUARIO\\Documents\\cmake-4.0.2-windows-x86_64\\bin;C:\\Users\\NOME_DO_USUARIO\\Documents\\PortableGit\\bin;${env:PATH}"
     },
     "cmake.buildEnvironment": {
-        "PATH": "C:\\msys64\\ucrt64\\bin;C:\\Users\\NOME_DO_USUARIO\\Documents\\cmake-4.0.2-windows-x86_64\\bin;C:\\Users\\guilhermekurtz389\\Documents\\PortableGit\\bin;${env:PATH}"
+        "PATH": "C:\\msys64\\ucrt64\\bin;C:\\Users\\NOME_DO_USUARIO\\Documents\\cmake-4.0.2-windows-x86_64\\bin;C:\\Users\\NOME_DO_USUARIO\\Documents\\PortableGit\\bin;${env:PATH}"
     }
 }
+
+Para garantir que deu tudo certo, aperte F1 e execute o comando **CMake: Delete Cache and Reconfigure**
 
 ⚠️⚠️Obs: modifique o caminho para o SEU USUÁRIO!!!⚠️⚠️
 
