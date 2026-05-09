@@ -35,10 +35,20 @@ Descompactar (clicar 2x)
 
 ## Passo 4 - Configurar o PATH do Windows
 
-Abra o prompt de comando do Windows (cmd.exe) e execute o seguinte comando:
-```sh
-set PATH=%PATH%;C:\msys64\ucrt64\bin;C:\Users\NOME_DO_USUARIO\Documents\cmake-4.0.2-windows-x86_64\cmake-4.0.2-windows-x86_64\bin;C:\Users\NOME_DO_USUARIO\Documents\PortableGit\bin
-```
+Abra o projeto no Visual Studio Code e então crie (caso não exista) a pasta .vscode dentro dele.
+
+Depois, crie o arquivo settings.json, e dentro dele adicione:
+{
+    "cmake.cmakePath": "C:/Users/NOME_DO_USUARIO/Documents/cmake-4.0.2-windows-x86_64/bin/cmake.exe",
+    "cmake.environment": {
+        "PATH": "C:\\msys64\\ucrt64\\bin;C:\\Users\\NOME_DO_USUARIO\\Documents\\cmake-4.0.2-windows-x86_64\\bin;C:\\Users\\guilhermekurtz389\\Documents\\PortableGit\\bin;${env:PATH}"
+    },
+    "cmake.buildEnvironment": {
+        "PATH": "C:\\msys64\\ucrt64\\bin;C:\\Users\\NOME_DO_USUARIO\\Documents\\cmake-4.0.2-windows-x86_64\\bin;C:\\Users\\guilhermekurtz389\\Documents\\PortableGit\\bin;${env:PATH}"
+    }
+}
+
+⚠️⚠️Obs: modifique o caminho para o SEU USUÁRIO!!!⚠️⚠️
 
 ## Passo 5 - Abrir o VSCode e verificar se as seguintes extensões estão instaladas:
 
@@ -46,15 +56,6 @@ set PATH=%PATH%;C:\msys64\ucrt64\bin;C:\Users\NOME_DO_USUARIO\Documents\cmake-4.
 - C/C++ Extension Pack
 - CMake Tools
 
-⚠️⚠️Obs: modifique o caminho para o SEU USUÁRIO!!!⚠️⚠️
-
-## Passo 6 - Adicionar o path do CMAKE Portable no VSCode
-
-No VSCode, pressione CTRL + , (vírgula), e então procure por cmake.cmakePath. Substitua o primeiro campo (que provavelmente terá cmake escrito) pelo caminho completo do cmake.exe que você baixou:
-```sh
-C:\Users\NOME_DO_USUARIO\Documents\cmake-4.0.2-windows-x86_64\bin\cmake.exe
-```
-
-## Passo 7 - Abrir o projeto no VSCode e configurar
+## Passo 6 - Abrir o projeto no VSCode e configurar
 
 Seguir a partir do Passo 2 do tutorial: https://github.com/guilhermechagaskurtz/CGCCHibrido/blob/main/GettingStarted.md
