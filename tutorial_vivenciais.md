@@ -11,7 +11,7 @@ Se NÃO houver, precisa instalar o msys2:
 
 Link: https://github.com/msys2/msys2-installer/releases/download/2025-12-13/msys2-x86_64-20251213.exe 
 
-E então abrir o msys2 e digitar no terminal:
+E então abrir o msys2 (Windows+R, digitar C:\msys64\ucrt64.exe e pressionar ENTER) e digitar no terminal:
 ```sh
 pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
 ```
